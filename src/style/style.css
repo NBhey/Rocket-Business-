@@ -9,7 +9,9 @@ a {
   text-decoration: none;
  
 }
+button{cursor: pointer;}
 header{
+    position: relative;
     margin: 0 auto;
     max-width:375px;
     max-height: 65px;
@@ -17,6 +19,37 @@ header{
     display: flex;
     justify-content:space-between;
     align-items:center;
+}
+.header__drop-menu{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    display: none;
+    min-width: 375px;
+    min-height: 620px;
+    padding: 30px 15px 0;
+    opacity: 0.9;
+    z-index: 1;
+    background-color: #45927F;
+}
+.drop-menu__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'PT Sans Caption',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.12px;
+}
+.drop-menu__navigation a{
+    color: #FFFFFF;
+}
+.header__drop-menuShow{
+    display: block;
+}
+.header button{
+    border-style: none; 
+    background-color:inherit;
 }
 .header__logo{
     width: auto;
@@ -146,6 +179,9 @@ header{
     line-height: 21px;
     color:#FFFFFF;
 }
+.btn__book:hover,.btn__book:focus {
+    background-color: #00D29F;
+}
 .btn__info {
     width: 137px;
     max-height: 43px;
@@ -159,6 +195,10 @@ header{
     line-height: 21px;
     color:#0DBC91;
 }
+.btn__info:hover,.btn__info:focus {
+    background-color: #0DBC91;
+    color: #FFFFFF;
+}
 .services__arrow {
     padding-top:20px;
     width: 340px;
@@ -170,7 +210,6 @@ header{
 .services__arrow button {
     border-style: none; 
     background-color:inherit;
-    cursor: pointer;
 }
 .services__arrow-count{
     font-family: 'PT Sans Caption',sans-serif;
@@ -214,7 +253,15 @@ header{
     font-size: 14px;
     line-height: 18.12px;
 }
-
+.navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'PT Sans Caption',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.12px;
+}
 .footer__navigation a{
     color: #FFFFFF;
 }

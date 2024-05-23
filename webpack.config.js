@@ -3,12 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js', // точка входа сборщика webpack
-  // output: {
-  //   clean: true,
-  //   path: path.resolve(__dirname, 'prod'),
-  //   filename: 'main.[contenthash].js',
-  //   assetModuleFilename: 'assets/[name].[contenthash][ext]'
-  // },
+  output: {
+    clean: true,
+    path: path.resolve(__dirname, 'prod'),
+    filename: 'main.[contenthash].js',
+    assetModuleFilename: 'assets/[name].[contenthash][ext]'
+  },
   module: {
     rules: [
       {
