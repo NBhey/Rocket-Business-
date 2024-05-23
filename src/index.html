@@ -14,46 +14,52 @@
         <img class="header__logo" src="./img/logo.png" alt="logo">
         <address class="header__contact"><a href="tel:+78630000000">+7(863) 000 00 00</a><span>Ростов-на-Дону</span></address>
     </header>
-    <section>
-        <img src="./img/childrensRoom.png" alt="Children's room">
-    </section>
-    <main>
-        <h3>Многопрофильная клиника для детей и взрослых</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    <main class="main">
+        <img class="main__image"  src="./img/childrensRoom.png" alt="Children's room">
+        <h3 class="main__title">Многопрофильная клиника для детей и взрослых</h2>
+        <p class="main__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Sit iure quas sequi minus, optio nesciunt fugiat ipsa asperiores? Est debitis, fugiat ipsam suscipit in nobis porro fugit tempore atque quos!
         </p>
     </main>
-    <article>
-        <div>
-            <img src="./img/doctor-working-table 1.png" alt="Doctor-working">
-        </div>
-        <div>
-            <h3>
+    <article class="services">
+        <img class="services__image" src="./img/doctor-working-table 1.png" alt="Doctor-working">
+        <div class="services__content">
+            <h3 class="services__content-title">
                 CHECK-UP <span>для мужчин</span>
             </h3>
-            <ul>
-                <li>Гормональный скрининг</li>
-                <li>Тестостерон</li>
-                <li>СВободный тестостерон</li>
-                <li>Глобулин,связывающий половые гормоны</li>
+            <ul class="services__content-list">
+                <li><span>Гормональный скрининг</span></li>
+                <li><span>Тестостерон</span></li>
+                <li><span>Свободный тестостерон</span> </li>
+                <li><span>Глобулин,связывающий половые гормоны</span></li>
             </ul>
-            <p>
-                Всего 2800&#8381; 3500&#8381;
+            <p class="services__content-price">
+                Всего 2800&#8381; <span>3500&#8381;</span>
             </p>
-            <button>
-                Записаться 
-            </button>
-            <button>
-                Подробнее
-            </button>
+            <div class="services__content-btn btn">
+                <button class="btn__book">
+                    <span>Записаться</span> 
+                </button>
+                <button class="btn__info">
+                    <span>Подробнее</span>
+                </button>
+            </div>
+            
         </div>
-        <div class="arrow">
-
+        <div class="services__arrow">
+            <button><img src="./img/leftArrow.svg" alt="LeftArrow"></button> 
+            <p class="services__arrow-count"><span>1</span> / 4</p>
+            <button><img src="./img/rightArrow.svg" alt="RightArrow"></button>
         </div>
     </article>
-    <footer>
-        <img src="./img/logo-footer.png" alt="">
-        <nav>
+    <footer class="footer">
+        <img class="footer__img" src="./img/logo-footer.png" alt="">
+        <ul class="footer__social" >
+            <li><a href="#" target="_blank"><img src="./img/instagram.png" alt="instagram"></a></li>
+            <li><a href="#" target="_blank"><img src="./img/whatsApp.png" alt="whatsApp"></a></li>
+            <li><a href="#" target="_blank"><img src="./img/telegram.png" alt="telegram"></a></li>
+        </ul>
+        <nav class="footer__navigation">
             <a href="#">О клинике</a>
             <a href="#">Услуги</a>
             <a href="#">Специалисты</a>
@@ -64,6 +70,6 @@
 
 
 
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
