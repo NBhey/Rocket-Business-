@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+ 
+}
+header{
+    margin: 0 auto;
+    max-width:375px;
+    max-height: 65px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header__logo{
+    width: auto;
+    height: 18.32px;
+}
+.header__contact {
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT Sans Caption',sans-serif;
+    color:#364844;
+    font-style: normal;
+    text-align: right;
+}
+.header__contact a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.7px;
+    color: inherit;
+}
+.header__contact span{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16.82px;
+}
