@@ -20,9 +20,20 @@ header{
     justify-content:space-between;
     align-items:center;
 }
+.header__drop-menuBtn{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(/src/img/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__drop-menuBtnShow{
+    background-image: url(/src/img/menuOpen.svg);
+}
 .header__drop-menu{
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 0px;
     display: none;
     min-width: 375px;
@@ -123,11 +134,17 @@ header{
     padding:20px 10px 25px ;
     background-color:#E2F0EF;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
     font-family: 'PT Sans Caption',sans-serif;
     color:#364844;
 }
+.services__content-slider{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* .services__content-slider:nth-child(2){
+    display: none;
+} */
 .services__content-title{
     width: 124px;
     font-weight: 700;
@@ -210,6 +227,27 @@ header{
 .services__arrow button {
     border-style: none; 
     background-color:inherit;
+}
+.services__arrow button:first-child{
+    width: 34px;
+    height: 22px;
+    background-image: url(/src/img/leftArrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.services__arrow button:first-child:hover {
+    background-image:url(/src/img/arrowActive.svg);
+    transform: rotate(180deg);
+}
+.services__arrow button:last-child{
+    width: 34px;
+    height: 22px;
+    background-image: url(/src/img/rightArrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.services__arrow button:last-child:hover {
+    background-image:url(/src/img/arrowActive.svg);
 }
 .services__arrow-count{
     font-family: 'PT Sans Caption',sans-serif;

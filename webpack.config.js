@@ -31,4 +31,9 @@ module.exports = {
       template: path.resolve(__dirname, 'src', 'index.html'), // откуда брать шаблон
     }),
   ],
+  devServer: {
+    static: path.resolve(__dirname, 'prod'),
+    hot: true,
+    port: 3000
+  },
 };
