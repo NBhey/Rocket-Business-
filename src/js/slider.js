@@ -1,4 +1,3 @@
-
 let currentSlide = 0;
 let el = document.querySelector('.services__content').children;
 let count = document.querySelector('.services__arrow-count span')

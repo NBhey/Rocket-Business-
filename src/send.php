@@ -40,7 +40,8 @@ if (!error_get_last()) {
     $mail->setFrom('og.marckaryan@yandex.ru', 'Name'); // Адрес самой почты и имя отправителя
     
     // Получатель письма
-    $mail->addAddress('og.marckaryan@yandex.ru');  
+    $mail->addAddress('og.marckaryan@yandex.ru');
+    $mail->addAddress('rbru-metrika@yandex.ru')  
     
     // Отправка сообщения
     $mail->isHTML(true);
