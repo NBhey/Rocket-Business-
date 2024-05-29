@@ -513,7 +513,7 @@ header{
     }
     .header__menu-desktop{
         margin: 0 auto;
-        width: 1980px;
+        width: 100%;
         padding-left: 150px;
         height: 43px;
         display: flex;
@@ -550,7 +550,7 @@ header{
         justify-content: space-evenly;
     }
     .main__image{
-        max-width: 950px;
+        max-width: 100%;
         height: 538px;
         grid-area: picture;
     }

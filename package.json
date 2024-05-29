@@ -11,6 +11,7 @@
   "author": "Oganes (NBhey)",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
     "@testing-library/dom": "^10.1.0",
     "@testing-library/jest-dom": "^6.4.5",
