@@ -34,7 +34,7 @@ if (!error_get_last()) {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'og.marckaryan@yandex.ru'; // Логин на почте
-    $mail->Password   = 'epluzmyhgxshefvl'; // Пароль на почте
+    $mail->Password   = '***************'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('og.marckaryan@yandex.ru', 'Name'); // Адрес самой почты и имя отправителя
