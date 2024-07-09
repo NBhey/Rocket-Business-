@@ -10,9 +10,9 @@ a {
   text-decoration: none;
  
 }
-body{
+/* body{
     overflow-x: hidden;
-}
+} */
 button{cursor: pointer;}
 header{
     position: relative;
@@ -382,11 +382,12 @@ header{
     }
     .header__contact-desktop {
         display: flex;
-        width: 1200px;
+        max-width: 1200px;
+        width: 100%;
         height: 67px;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        gap: 450px;
+        gap: 35px;
     }
     .contact-desktop__location {
         display: flex;
@@ -437,12 +438,16 @@ header{
     }
     .contact-desktop__connect {
         position: relative;
+        width: 50%;
         height: 43px;
         display: flex;
-        justify-content: center;
+        justify-content:space-between;
         align-items: center;
         align-content: center;
         gap: 35px;
+    }
+    .contact-desktop__tel {
+        width: 100%; 
     }
     .contact-desktop__tel img{
         vertical-align: center;
@@ -457,7 +462,7 @@ header{
         color: #364844;
     }
     #book {
-        width: 196px;
+        width: 80%;
         height: 43px;
         border-radius: 50px;
         border-style: none;
@@ -553,6 +558,7 @@ header{
         max-width: 100%;
         height: 538px;
         grid-area: picture;
+        justify-self: end;
     }
     .main-desktop__content{
         grid-area: main;
